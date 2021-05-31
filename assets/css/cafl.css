@@ -1,9 +1,17 @@
+/* Global Styling */
+div.menu-section {
+    display: none;
+}
+
+/* End of Global Styling */
+
 /* Site Header Space */
 
 .cafl-header{
     overflow: visible;
-    height: 150px;
-}
+    height: 100px;
+  }
+
 
 .cafl-header-logo {
     height: 100%;
@@ -12,8 +20,81 @@
 
 .cafl-header-text {
     height: 100%;
-    content-align: middle;
     display: flex;
     align-items: center;
+    letter-spacing: 3px;
+    font-size: 16pt;
+    padding: 0 20px;
 }
 /* End of Site Header Space */
+
+/* Navigation */
+.nav-item {
+    width: 20%;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+/*End of Navigation */
+
+/* CTA */
+.cafl-cta-image {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    object-fit: cover;
+}
+
+.cafl-cta-options{
+    float: left;
+    height: 400px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.cafl-cta-options li{
+    list-style-type: none;
+    margin: 5%;
+    font-size: 16pt;
+    letter-spacing: 2px;
+}
+
+.cafl-cta-options ul{
+    width: 100%;
+}
+
+
+/* End of CTA */
+
+/* Footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #dddddddd;
+    width: 100%;
+    text-align: center;
+}
+
+.cafl-footer-link{
+    float: left;
+    width: 33%;
+    margin: 5px auto 5px auto;
+}
+
+.cafl-footer-bottom{
+    float: left;
+    font-size: 8pt;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cafl-footer-top{
+    font-size: 10pt;
+    width: 100%;
+    text-align: center;
+}
+/* End of Footer */

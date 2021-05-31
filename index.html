@@ -22,19 +22,15 @@
 
   <body onload="domLoaded();">
 
-    <!-- Background Image for all pages-->
-    <div id='imgbground' class='bground'></div>
-    <!-- End of Background Image div-->
-
     <!-- Start of Header-->
     <header class='cafl-header'>
       <img class='cafl-header-logo' src='assets/images/cafl-logo.jpg' alt='Clean Air for Leamington Logo'>
       <h1 class="cafl-header-text">The Campaign for Clean Air for Leamington Spa</h1>
     </header>
     <!-- End of Header-->
+
     <!-- Start of Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,484 +38,100 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home-link">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="#air-quality-link">Air Quality</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#better-town-link">Better Town</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#keep-air-clean-link">Keep the Air Clean</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#get-involved-link">Get Involved</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
     <!-- End of Navigation-->
 
-    <!--  Start of HomePage menu section-->
-    <div style='display: none;' class='MenuComponent' id='HomePage'>
-      <a id='HomePage-Top'></a>
-      <section id='pln-welcome' class='pln-cta'>
-        <h1 class="pln-semantic-only">Home Page</h1>
-
-        <!-- Start of Primary Call to Action -->
-        <div class='row'>
-          <div id='pln-cta' class='col-12 col-md-10'>
-            <div class="d-none d-md-block">
-              <p>Drones, UAVs (unmanned aerial vehicles) and traditional model aircraft are becoming increasingly
-                popular.<br>
-                <br>You are just six short steps away from planning a safe, legal and enjoyable flight - we look forward to
-                seeing the footage.
-              </p>
-              </div>
-              <div class="d-block d-md-none">
-                <p>You are just six steps away planning a safe, legal and enjoyable flight.
-                </p>
-              </div>
-              <div class="row">
-                <div id="pln-cta-primary" class='btn btn-primary col-md-8 col-12'>Get Started</div>
-              </div>
-          </div>
+    <!-- Home Page-->
+      <div id="home" class="menu-section">
+        <a id="home-link"></a>
+        <div class="cafl-cta-left">
+          <img src="assets/images/jephson-memorial.jpg" class="cafl-cta-image">
         </div>
-        <!-- End of Primary Call to Action -->
+        <div class="cafl-cta-options">
+          <ul>
+            <li><a href="#air-quality-link">Air Quality in Leamington Spa</a></li>
+            <li><a href="#better-town-link">Building a Better Town</a></li>
+            <li><a href="#keep-air-clean-link">Keeping the Air Clean</a></li>
+            <li><a href="#get-involved-link">Get Involved</a></li>
+          </ul>
 
-        <!-- Start of Notice-->
-        <div class="pln-notice-container col-8">
-          <div class="row">
-            <div class="col-2 pln-notice-header d-none d-md-block">
-              <p>Remember</p>
-            </div>
-            <div class="col-12 col-md-10 pln-notice">
-              <p>It is the pilot's responsibility to ensure that all flights are safe and legal. If in doubt do not fly.
-              </p>
-            </div>
-          </div>
         </div>
-        <!-- End of Notice-->
+      </div>
+    <!-- End of Home Page-->
 
-      </section>
-    </div>
-    <!--  End of HomePage menu section-->
-
-    <!--  Start of FlightParameters menu section-->
-    <div style='display: none;' class='MenuComponent' id='FlightParameters'>
-      <a id='FlightParameters-Top'></a>
-      <section>
-        <div class="row">
-
-          <!-- Evaluate the competencies of the remote pilot all can be selected -->
-          <div id="pln-competencies" class="col-sm-12 col-md-4">
-
-            <!-- Step One-->
-            <div class="row pln-steps">
-              <div class='col-12'>
-                <p id="pln-step-one" class="pln-param-instruct"><span class="pln-step">Step One</span>Select your competencies, skills and certifications.</p>
-              </div>
-            </div>
-            <!-- End of Step One-->
-
-            <h1 class="pln-params-h1">Competencies</h1>
-
-            <!-- Read the Manual -->
-            <div id="pln-rtm" class="pln-comp">
-              <div class="pln-comp-head">
-                <label class="pln-comp-lbl" for="pln-comp-rtm-chk">
-                  Read the Manual
-                </label>
-                <input type="checkbox" id="pln-comp-rtm-chk" class="pln-param-input pln-comp-input">
-              </div>
-              <div class="pln-comp-desc">
-                <p>Ensure that you have read the manual so that you are familiar with the drone, its specifications, its
-                  capabilities and its limitations.</p>
-              </div>
-            </div>
-
-            <!-- Operator ID-->
-            <div id="pln-opid" class="pln-comp">
-              <div class="pln-comp-head">
-                <label class="pln-comp-lbl" for="pln-comp-opid-chk">
-                  Operator ID
-                </label>
-                <input type="checkbox" id="pln-comp-opid-chk" class="pln-param-input pln-comp-input">
-              </div>
-              <div class="pln-comp-desc">
-                <p>Ensure that you have obtained an operator ID from the Civil Aviation Authority.</p>
-              </div>
-            </div>
-
-            <!-- Flyer ID-->
-            <div id="pln-flyid" class="pln-comp">
-              <div class="pln-comp-head">
-                <label class="pln-comp-lbl" for="pln-comp-flyid-chk">
-                  Flyer ID
-                </label>
-                <input type="checkbox" id="pln-comp-flyid-chk" class="pln-param-input pln-comp-input">
-              </div>
-              <div class="pln-comp-desc">
-                <p>Ensure that you have taken the online test and obtained a Flyer ID from the Civil Aviation Authority.
-                </p>
-              </div>
-            </div>
-
-            <!-- A2 Certificate of Competency-->
-            <div id="pln-a2coc" class="pln-comp">
-              <div class="pln-comp-head">
-                <label class="pln-comp-lbl" for="pln-comp-a2coc-chk">
-                  A2 CoC
-                </label>
-                <input type="checkbox" id="pln-comp-a2coc-chk" class="pln-param-input pln-comp-input">
-              </div>
-              <div class="pln-comp-desc">
-                <p>Ensure that you hold a current A2 Certificate of Competency from a CAA approved training organisation.
-                </p>
-              </div>
-            </div>
-
-            <!-- GVC-->
-            <div id="pln-gvc" class="pln-comp">
-              <div class="pln-comp-head">
-                <label class="pln-comp-lbl" for="pln-comp-gvc-chk">
-                  GVC
-                </label>
-                <input type="checkbox" id="pln-comp-gvc-chk" class="pln-param-input pln-comp-input">
-              </div>
-              <div class="pln-comp-desc">
-                <p>Ensure that you hold a current General Visual Line of Sight Certificate or GVC for short.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End of Competencies Section-->
-
-          <!-- Choose the Category of Drone, only one can be selected -->
-          <div id="pln-dronecategories" class="col-sm-12 col-md-4">
-
-            <!-- Step Two-->
-            <div class="row pln-steps">
-              <div class='col-12'>
-                <p id="pln-step-two" class="pln-param-instruct"><span class="pln-step">Step Two</span>Select the drone
-                  category.
-                  Refer to the CAA <a
-                    href='https://publicapps.caa.co.uk/modalapplication.aspx?appid=11&mode=detail&id=415'>CAP 722</a> for
-                  guidance.</p>
-              </div>
-            </div>
-            <!-- End of Step Two-->
-
-            <h1 class="pln-params-h1">Drone Categories</h1>
-
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-c01" value="option1"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-c01">
-                  C0 - Toy or no camera
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone weighing 250g or less, that is either a toy or has no camera or recording
-                  device.</p>
-              </div>
-            </div>
-
-            <!-- C0 with camera-->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-c02" value="option2"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-c02">
-                  C0 - Camera
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone weighing 250g or less, that has a camera or other data recording device.</p>
-              </div>
-            </div>
-
-            <!-- C1 certified-->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-c1" value="option3"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-c1">
-                  C1 - Certified
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone that has been certified by the manufacturer as C1.</p>
-              </div>
-            </div>
-
-            <!-- A1 transition-->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-a1t" value="option4"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-a1t">
-                  A1 - Transition
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone that weighs below 500g.</p>
-              </div>
-            </div>
-
-            <!-- C2 Certified Low Speed-->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-c2ls" value="option5"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-c2ls">
-                  C2 - Low Speed
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone that is C2 certified, operating in low speed mode.</p>
-              </div>
-            </div>
-
-            <!-- C2 Certified -->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-c2" value="option6"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-c2">
-                  C2
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone that is C2 certified.</p>
-              </div>
-            </div>
-
-            <!-- A2 Transition -->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-a2t" value="option7"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-a2t">
-                  A2 - Transition
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone that is below 2kg.</p>
-              </div>
-            </div>
-
-            <!-- C3 -->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-c3" value="option8"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-c3">
-                  C3
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone that is over 2kg.</p>
-              </div>
-            </div>
-
-            <!-- C4 -->
-            <div class="pln-dronecat">
-              <div class="pln-dronecat-head">
-                <input type="radio" name="pln-dronecat-radios" id="pln-dronecat-radio-c4" value="option9"
-                  class="pln-param-input pln-drone-input">
-                <label for="pln-dronecat-radio-c4">
-                  C4
-                </label>
-              </div>
-              <div class="pln-dronecat-desc">
-                <p>A drone that is over 2kg and has no built-in flight controls. Typically a model aircraft.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End of Drone Categories-->
-
-          <!-- List the flight categories, mark those available with the drone and pilot competency combination -->
-          <div id="pln-flightcategories" class="col-sm-12 col-md-4">
-
-            <!-- Results from Step One and Step Two-->
-            <div class="row pln-steps">
-              <div class='col-12'>
-                <p id="pln-result-a" class="pln-param-instruct">Permitted flight categories in <span
-                    class="pln-flight-yes">Green</span>, others <span class="pln-flight-no">Crossed out in Red</span>.
-                </p>
-              </div>
-            </div>
-            <!-- End of Results from Step One and Step Two-->
-
-            <h1 class="pln-params-h1">Flight Categories</h1>
-
-            <!-- A1 Fly Over Stay Over -->
-            <div id="pln-flightcat-a1-so" class="pln-flightcat">
-              <p class="pln-flightcat-head">A1 Fly Over - Stay Over</p>
-              <div class="pln-flightcat-desc">
-                <p>No miniumum separation from uninvolved people, potentially flying over, and staying over uninvolved people.</p>
-              </div>
-            </div>
-
-            <!-- A1 Fly Over Pass Over -->
-            <div id="pln-flightcat-a1-po" class="pln-flightcat">
-              <p class="pln-flightcat-head">A1 Fly Over - Pass Over</p>
-              <div class="pln-flightcat-desc">
-                <p>No miniumum separation from uninvolved people, potentially flying over, but only passing briefly over uninvolved people.</p>
-              </div>
-            </div>
-
-            <!-- A2 Close to People - 5m -->
-            <div id="pln-flightcat-a2-5" class="pln-flightcat">
-              <p class="pln-flightcat-head">A2 Close to People - 5m</p>
-              <div class="pln-flightcat-desc">
-                <p>Minimum separation of 5m from uninvolved people.</p>
-              </div>
-            </div>
-
-            <!-- A2 Close to People - 30m -->
-            <div id="pln-flightcat-a2-30" class="pln-flightcat">
-              <p class="pln-flightcat-head">A2 Close to People - 30m</p>
-              <div class="pln-flightcat-desc">
-                <p>Minimum separation of 30m from uninvolved people.</p>
-              </div>
-            </div>
-
-            <!-- A2 Close to People - 50m -->
-            <div id="pln-flightcat-a2-50" class="pln-flightcat">
-              <p class="pln-flightcat-head">A2 Close to People - 50m</p>
-              <div class="pln-flightcat-desc">
-                <p>Minimum separation of 50m from uninvolved people.</p>
-              </div>
-            </div>
-
-            <!-- A3 Far from People - 50m -->
-            <div id="pln-flightcat-a3" class="pln-flightcat">
-              <p class="pln-flightcat-head">A3 Far From People</p>
-              <div class="pln-flightcat-desc">
-                <p>Minimum separation of 50m from uninvolved people AND you must remain over 150m from congested areas.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End of Flight Categories Section-->
-
-          <!-- Flight Category 'Fixed' buttons -->
-          <div id="pln-next-location" class="btn btn-primary pln-btn-fixed pln-btn-right">Next</div>
-          <div id="pln-param-reset" class="btn btn-primary pln-btn-fixed pln-btn-left">Reset</div>
-          <!-- End of Flight Category 'Fixed' buttons -->
-        </div>
-      </section>
-    </div>
-    <!--  End of FlightParameters menu section-->
-
-    <!--  Start of Location menu section-->
-    <div style='display: none;' class='MenuComponent' id='Location'>
-      <a id='Location-Top'></a>
-      <section>
-        <div class="row">
-          <div id="pln-flsummary" class="col-12">
-            <p>You may wish to return to the <a id="pln-param-rtn" onclick="showMenuComponent('FlightParameters');">Flight Parameters</a> page to determine your flight category.</p>
-          </div>
-        </div>
-        <div class="row" id="pln-mapping">
-          <!-- Location Section -->
-          <div id="pln-geo" class="col-sm-12 col-md-2">
-
-            <!-- Step Three-->
-            <div class="row">
-              <div class='col-12 pln-steps-location'>
-                <p id="pln-step-three" class="pln-param-instruct"><span class="pln-step">Step Three</span>Enter a location and Re-Centre Maps.</p>
-              </div>
-            </div>
-            <!--  End of Step Three-->
-
-            <h1 class="pln-h1">Location</h1>
-
-            <!-- Following form dervied from Bootstrap https://getbootstrap.com/docs/4.1/components/forms/ !-->
-            <form id="UK-Postcode" class="pln-location-frm">
-              <div class="form-group">
-                <label for="pln-postcode">Postcode (Enter when complete)</label>
-                <input type="text" class="form-control" id="pln-postcode" aria-describedby="UK-Postcode" placeholder="Enter postcode">
-              </div>
-              <div class="form-group">
-                <label for="pln-latitude">Latitude</label>
-                <input type="number" class="form-control" id="pln-latitude" name="plnLat" placeholder="Decimal Latitude">
-                <label for="pln-longitude">Longitude</label>
-                <input type="number" class="form-control" id="pln-longitude" name="plnLong"
-                  placeholder="Decimal Longitdue">
-                <small id="latlongHelp" class="form-text text-muted d-none d-xl-inline">You may wish to further localise the latitude and longitude</small>
-              </div>
-              <div class="pln-attrib d-none d-md-inline">
-                <p>Contains Royal Mail data  Royal Mail copyright and database right 2021.</p>
-              </div>
-
-              <div class="btn btn-primary" id="pln-recenter">Re-Centre Maps</div>
-
-              <!-- Step Four-->
-              <div class='col-12 pln-steps-location'>
-                <p id="pln-step-four" class="pln-param-instruct"><span class="pln-step">Step Four</span>Review the
-                  Ordnance Survey and Satellite maps against the flight category.</p>
-              </div>
-              <!-- End of Step Four -->
-            </form>
-            <!-- End of Form -->
-          </div>
-          <!-- End of Location Section -->
-
-          <!-- Start of Maps Columns-->
-          <div class="col-12 col-md-10" id="pln-maps">
-            <div class="row">
-              <div id="pln-osmap" class="col-10 mx-auto col-md-6 m-md-0">
-                <p>OS Map</p>
-              </div>
-
-              <div id="pln-satview" class="col-10 mx-auto col-md-6 m-md-0">
-                <p>Satellite View</p>
-              </div>
-            </div>
-          </div>
-          <!-- End of Maps Column-->
-        </div>
-        <div class="row">
-          <!-- Step Five-->
-          <div class='col-12 pln-steps-location' id="pln-step-five-1">
-            <p id="pln-step-five" class="pln-param-instruct"><span class="pln-step">Step Five</span>Review the Drone Safety Map for air restrictions and ground hazards.</p>
-          </div>
-          <!-- End of Step Five-->
-        </div>
-        <div class="row">
-          <!-- Step Six-->
-          <div class='col-12 pln-steps-location'>
-            <p id="pln-step-six" class="pln-param-instruct"><span class="pln-step">Step Six</span>Use the top-left corner menu of the Drone Safety Map to <b>Submit a Flight Report.</b></p>
-          </div>
-          <!-- End of Step Six-->
-        </div>
+    <!-- Air Quality Page-->
+    <div id="air-quality" class="menu-section">
+      <a id="air-quality-link"></a>
+      <div class="cafl-cta-left">
+        <img src="assets/images/car-exhaust-emissions.jpg" class="cafl-cta-image">
+      </div>
+      <div class="cafl-cta-options">
         
-        <!-- Location 'Fixed' buttons-->
-        <div id="pln-stepfour-next" class="btn btn-primary pln-btn-fixed pln-btn-right">Next</div>
-        <div id="pln-dronesafety" class="btn btn-primary pln-btn-fixed pln-btn-left">Drone Safety Map</div>
-        <!-- End of Location 'Fixed' buttons-->
-      </section>
+      </div>
     </div>
-    <!--  End of Location menu section-->
+  <!-- End of Air Quality Page-->
+
+  <!-- Better Town Page-->
+  <div id="better-town" class="menu-section">
+    <a id="better-town-link"></a>
+    <div class="cafl-cta-left">
+      <img src="assets/images/the-town.jpg" class="cafl-cta-image">
+    </div>
+    <div class="cafl-cta-options">
+      
+    </div>
+  </div>
+<!-- End of Better Town Page-->
+
+<!-- Keep the Air Clean Page-->
+<div id="keep-air-clean" class="menu-section">
+  <a id="keep-air-clean-link"></a>
+  <div class="cafl-cta-left">
+    <img src="assets/images/keep-air-clean.jpg" class="cafl-cta-image">
+  </div>
+  <div class="cafl-cta-options">
+    
+  </div>
+</div>
+<!-- End of Keep the Air Clean Page-->
+
+<!-- Get Involved Page-->
+<div id="get-involved" class="menu-section">
+  <a id="get-involved-link"></a>
+  <div class="cafl-cta-left">
+    <img src="assets/images/get-involved.jpg" class="cafl-cta-image">
+  </div>
+  <div class="cafl-cta-options">
+    
+  </div>
+</div>
+<!-- End of Get Involved Page-->
 
     <!-- Start of Footer-->
     <footer>
-      <p class='footer-sm'>Created by Stephen Clarke on behalf of Clean Air for Leamington Spa
-        ||&nbsp;Last update on 11/05/2021||&nbsp;<span class='footer-sm' id='HTMLSerNo'>0225</span>.<span class='footer-sm' id='CSSSerNo'></span><span class='footer-sm' id='JSSerNo'></span> || For Enquiries Please Email: Stephen.J.Clarke@hotmail.co.uk</p>
+      <div class="cafl-footer-top">
+        <div class="cafl-footer-link">Who We Are</div>  
+      <div class="cafl-footer-link">What We Do</div> 
+      <div class="cafl-footer-link">Contact Us</div>
+    </div>
+      <div class="cafl-footer-bottom"><p class='footer-sm'>Created by Stephen Clarke on behalf of Clean Air for Leamington Spa
+        ||&nbsp;Last update on 11/05/2021||&nbsp;<span class='footer-sm' id='HTMLSerNo'>0225</span>.<span class='footer-sm' id='CSSSerNo'></span><span class='footer-sm' id='JSSerNo'></span> || For Enquiries Please Email: Stephen.J.Clarke@hotmail.co.uk</p></div>
     </footer>
     <!-- End of Footer-->
 
@@ -528,7 +140,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AqXZ0hvITdpn5g-2a8bbicLdCTTJgoQHACH441QxLNJDdc_Qlpl6-3BHR0_lGQpJ' async defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWmo-Ndb3YTzwMWSHAzg8an9dM9WDOlMk&callback=initialize&libraries=&v=weekly" async></script>
-    <script src='assets/js/uav-flight-planner.js'></script>
+    <script src='assets/js/cafl.js'></script>
     <!-- End of Javascript References-->
   </body>
 

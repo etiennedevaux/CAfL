@@ -1,0 +1,19 @@
+/* Site Header Space */
+
+.cafl-header{
+    overflow: visible;
+    height: 150px;
+}
+
+.cafl-header-logo {
+    height: 100%;
+    float: left;
+}
+
+.cafl-header-text {
+    height: 100%;
+    content-align: middle;
+    display: flex;
+    align-items: center;
+}
+/* End of Site Header Space */

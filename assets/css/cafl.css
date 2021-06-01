@@ -62,7 +62,10 @@ div.menu-section {
     margin: 30px;
     object-fit: cover;
     border-radius: 3px;
-}
+    animation-name: CTA-anim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+ }
 
 .cafl-cta-options{
     float: left;
@@ -120,3 +123,19 @@ footer{
     text-align: center;
 }
 /* End of Footer */
+
+
+/* Animation for the front page call to action. */
+@keyframes CTA-anim{
+    from{
+        transform: scale(1);
+        opacity: 0.7;
+        /* filter: blur(10px); */
+      }
+      to{
+        transform: scale(1.1);
+        opacity: 1;
+        /* filter: blur(1px); */
+      }
+
+}

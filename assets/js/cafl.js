@@ -28,6 +28,7 @@ function showMenuComponent(sect) {
 
    var y = document.getElementById(sect + '-button');
    y.style.textDecoration = 'underline';
+   window.history.pushState("", "Clean Air", "#" + sect + "-link");
    document.getElementById('JSSerNo').textContent = '.' + jsfileversion;
  }
 

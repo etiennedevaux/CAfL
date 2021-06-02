@@ -1,7 +1,23 @@
+/* Variables */
+:root{
+    --cssfileversion: "0008";
+}
+
+
 /* Global Styling */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 30px;
+}
+
 body{
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 div.menu-section {
     display: none;
@@ -16,13 +32,11 @@ div.menu-section {
     max-width: 1000px;
 }
 
-.cafl-cta-summary h1{
-    color:#555;
+.cafl-cta-summary h1, .cafl-cta-infopage h1{
+    color:#79c;
+    letter-spacing: 2px;
    }
 
-.cafl-cta-summary li{
-    margin-left: 10px;
-}
 
 .cafl-cta-left {
     margin: 0;
@@ -31,13 +45,18 @@ div.menu-section {
 
 .cafl-cta-left img{
     width: 60%;
-    height: 400px;
+    height: 600px;
+    max-width: 500px;
     margin: 40px auto;
     object-fit: cover;
     border-radius: 3px;
     animation-name: CTA-anim;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+}
+
+.cafl-cta-infopage{
+    padding: 5px 10% 0 5%;
 }
 
 /* End of Global Styling */
@@ -62,6 +81,7 @@ div.menu-section {
     letter-spacing: 3px;
     font-size: 18pt;
     padding: 0 30px;
+    margin: 0;
 }
 
 .cafl-header-strapline {
@@ -95,7 +115,7 @@ div.menu-section {
     letter-spacing: 2px;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 3% 5%;
 }
 
 .cafl-vision p, .cafl-cta-options p{
@@ -121,13 +141,15 @@ div.menu-section {
 
 .cafl-cta-image {
     width: 60%;
-    height: 400px;
-    margin: 40px auto;
+    height: 600px;
+    max-width: 500px;
+    margin: 10px auto;
     object-fit: cover;
     border-radius: 3px;
     animation-name: CTA-anim;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    padding: 5%;
     
  }
 
@@ -145,6 +167,13 @@ div.menu-section {
     letter-spacing: normal;
 }
 
+.cafl-cta-headline {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    font-size: 14pt;
+}
 
 /* End of CTA */
 
@@ -155,20 +184,22 @@ footer{
     background-color: #dddddddd;
     width: 100%;
     text-align: center;
+    height: 80px;
 }
 
 .cafl-footer-link{
     float: left;
     width: 33%;
-    margin: 5px auto 5px auto;
+    margin: 0px auto 0px auto;
     font-weight: 800;
+    padding-top: 5px;
 }
 
 .cafl-footer-bottom{
     float: left;
     font-size: 8pt;
     width: 100%;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .cafl-footer-top{
@@ -176,6 +207,10 @@ footer{
     width: 100%;
     text-align: center;
 }
+
+#CSSSerNo::before{
+    content: var(--cssfileversion);
+  }
 /* End of Footer */
 
 

@@ -1,5 +1,5 @@
 //* Global Variables *//
-   var jsfileversion = "00001";
+   var jsfileversion = "0009";
    
 //* Function aiming to consolidate onload scripts into a single place, keeping the HTML cleaner *//
 function domLoaded() {
@@ -20,19 +20,16 @@ function showMenuComponent(sect) {
    
    var x = document.getElementById(sect);
    x.style.display = 'block';
-   var menuElements = document.getElementsByClassName('MenuButton');
+   var menuElements = document.getElementsByClassName('cafl-nav');
 
    for (i = 0; i < menuElements.length; i++) {
       menuElements[i].style.textDecoration = '';
    }
 
-   var y = document.getElementById(sect + 'Button');
+   var y = document.getElementById(sect + '-button');
    y.style.textDecoration = 'underline';
-   document.getElementById('navbarNavDropdown').className='navbar-collapse show';
    document.getElementById('JSSerNo').textContent = '.' + jsfileversion;
-   window.history.pushState("", "UAV Flight Planner Home", "#" + sect + "-Top");
-   document.getElementById(sect).scrollIntoView();
-}
+ }
 
 
 

@@ -11,6 +11,8 @@
     <meta name='keywords' content=''>
     <!-- End of Meta Tags-->
 
+    <script src='assets/js/cafl.js'></script>
+
     <!-- Links to CSS Libraries-->
     <link rel='icon' href='assets/images/favicon.ico'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -39,19 +41,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home-link">Home</a>
+            <a class="nav-link cafl-nav" href="#home-link" id="home-button">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#air-quality-link">Air Quality</a>
+            <a class="nav-link cafl-nav" href="#air-quality-link" id="air-quality-button">Air Quality</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#better-town-link">A Better Town</a>
+            <a class="nav-link cafl-nav" href="#better-town-link" id="better-town-button">A Better Town</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#keep-air-clean-link">Keep the Air Clean</a>
+            <a class="nav-link cafl-nav" href="#keep-air-clean-link" id="keep-air-clean-button">Keep the Air Clean</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#get-involved-link">Get Involved</a>
+            <a class="nav-link cafl-nav" href="#get-involved-link" id="get-involved-button">Get Involved</a>
           </li>
         </ul>
       </div>
@@ -62,11 +64,17 @@
       <div id="home" class="menu-section">
         <a id="home-link"></a>
         <div class="row">
+          <div class="cafl-cta-headline col-12">
+            <p>A reminder that 17th June 2021 is <a href="https://www.cleanairday.org.uk/">Clean Air Day</a></p>
+          </div>
+        </div>
+        <div class="row">
+         
           <div class="cafl-vision col-4">
             <p>Clean Air for Leamington wants Royal Leamington Spa to be a town where:</p>
             <ul>
             <li>air quality is excellent</li>
-            <li>people are prioritised over vechicles</li>
+            <li>people are prioritised over vehicles</li>
             <li>there is a high degree of active travel</li>
             <li>people actively support clean air</li>
           </ul>
@@ -88,6 +96,7 @@
 
         </div>
       </div>
+      
         
       </div>
     <!-- End of Home Page-->
@@ -123,7 +132,7 @@
         <ul>
           <li>Cycleways</li>
           <li>Solar Together</li>
-          <li>..</li>
+          <li>The Anti-Idling Campaign</li>
         </ul>
       </div>
    </div>
@@ -149,7 +158,7 @@
         <li>Use Public Transport</li>
         <li>Avoid idling your engine</li>
         <li>Recycle Don't Burn</li>
-      </ul>>
+      </ul>
     </div>
   </div>
 </div>
@@ -172,24 +181,75 @@
 </div>
 <!-- End of Get Involved Page-->
 
+<!-- Who We Are Page -->
+<div id="who-we-are" class="menu-section">
+  <a id="who-we-are-link"></a>
+  <div class="row">
+    <div class="cafl-cta-infopage col-10">
+      <h1>Clean Air for Leamington Spa Steering Group</h1>
+      <p>The steering group is made up of members of the local community.  They come from a wide range of backgrounds, but are brought together by a common desire to see Leamington become a Clean Air Town.</p>
+      <h2>Steering Group Officers</h2>
+      <p class="cafl-sg-member">Kevin McGreal – Chair</p>
+      <p class="cafl-sg-member">Mark Lever – Treasurer</p>
+      <p class="cafl-sg-member">Stephen Clarke - Membership Secretary</p>
+      <h2>Steering Group Members</h2>
+      <p class="cafl-sg-member">Andi Dunn – Steering Group</p>
+      <p class="cafl-sg-member">Annabel Precious – Steering Group</p>
+      <p class="cafl-sg-member">Christine Woodland – Steering Group</p>
+ 
+      <p class="cafl-sg-member">Clara Joergensen – Steering Group</p>
+      <p class="cafl-sg-member">Caitlin Mason – Steering Group</p>
+      <p class="cafl-sg-member">Emma Smith – Steering Group</p>
+
+      <p class="cafl-sg-member">Hugh Woodland – Steering Group</p>
+      <p class="cafl-sg-member">Ignaty Dyakov-Richmond – Steering Group</p>
+
+      <p class="cafl-sg-member">Jonathan Nicholls  – Steering Group</p>
+      <p class="cafl-sg-member">Nina Black – Steering Group</p>
+
+      <p class="cafl-sg-member">Susan Rasmussen – Steering Group</p>
+     </div>
+ </div>
+</div>
+<!-- End of Who We Are Page-->
+
+<!-- What We Do Page -->
+<div id="what-we-do" class="menu-section">
+  <a id="what-we-do-link"></a>
+  <div class="row">
+    <div class="cafl-cta-infopage col-10">
+      <h1>What We Do in Clean Air for Leamington Spa</h1>
+    </div>
+ </div>
+</div>
+<!-- End of What We Do Page-->
+
+<!-- Contact Page -->
+<div id="contact" class="menu-section">
+  <a id="contact-link"></a>
+  <div class="row">
+    <div class="cafl-cta-infopage col-10">
+      <h1>Contact Clean Air for Leamington Spa</h1>
+    </div>
+ </div>
+</div>
+<!-- End of Contact Page-->
+
     <!-- Start of Footer-->
     <footer>
       <div class="cafl-footer-top">
-        <div class="cafl-footer-link">Who We Are</div>  
-      <div class="cafl-footer-link">What We Do</div> 
-      <div class="cafl-footer-link">Contact Us</div>
+        <div class="cafl-footer-link"><a href="#who-we-are-link" id="who-we-are-button" class="cafl-nav">Who We Are</a></div>  
+      <div class="cafl-footer-link"><a href="#what-we-do-link" id="what-we-do-button" class="cafl-nav">What We Do</a></div> 
+      <div class="cafl-footer-link"><a href="#contact-link" id="contact-button" class="cafl-nav">Contact Us</a></div>
     </div>
       <div class="cafl-footer-bottom"><p class='footer-sm'>Created by Stephen Clarke on behalf of Clean Air for Leamington Spa
-        ||&nbsp;Last update on 11/05/2021||&nbsp;<span class='footer-sm' id='HTMLSerNo'>0225</span>.<span class='footer-sm' id='CSSSerNo'></span><span class='footer-sm' id='JSSerNo'></span> || For Enquiries Please Email: Stephen.J.Clarke@hotmail.co.uk</p></div>
+        ||&nbsp;Last update on 2/06/2021||&nbsp;<span class='footer-sm' id='HTMLSerNo'>0008</span>.<span class='footer-sm' id='CSSSerNo'></span><span class='footer-sm' id='JSSerNo'></span> || For Enquiries Please Email: <a href="mailto:cleanairforleamingtonspa@gmail.com">cleanairforleamingtonspa@gmail.com</a></p></div>
     </footer>
     <!-- End of Footer-->
 
     <!-- Start of Javascript References -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AqXZ0hvITdpn5g-2a8bbicLdCTTJgoQHACH441QxLNJDdc_Qlpl6-3BHR0_lGQpJ' async defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWmo-Ndb3YTzwMWSHAzg8an9dM9WDOlMk&callback=initialize&libraries=&v=weekly" async></script>
-    <script src='assets/js/cafl.js'></script>
     <!-- End of Javascript References-->
   </body>
 

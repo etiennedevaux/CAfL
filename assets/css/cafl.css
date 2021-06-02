@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --cssfileversion: "0008";
+    --cssfileversion: "0009";
 }
 
 
@@ -22,6 +22,7 @@ body{
 div.menu-section {
     display: none;
     padding-top: 10px;
+    margin-bottom: 80px;
 }
 
 .cafl-cta-summary{
@@ -35,7 +36,7 @@ div.menu-section {
 .cafl-cta-summary h1, .cafl-cta-infopage h1{
     color:#79c;
     letter-spacing: 2px;
-   }
+}
 
 
 .cafl-cta-left {
@@ -45,8 +46,8 @@ div.menu-section {
 
 .cafl-cta-left img{
     width: 60%;
-    height: 600px;
-    max-width: 500px;
+    height: 500px;
+    max-width: 400px;
     margin: 40px auto;
     object-fit: cover;
     border-radius: 3px;
@@ -57,6 +58,25 @@ div.menu-section {
 
 .cafl-cta-infopage{
     padding: 5px 10% 0 5%;
+}
+
+.cafl-quote{
+    font-weight: 600;
+    color: #aaa;
+    font-style: oblique;
+    padding: 0 10px;
+    font-size: 95%;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.cafl-reference {
+    text-align: right;
+    margin: -15px 0 30px 0;
+}
+
+.cafl-reference a{
+    font-size: 10pt;
 }
 
 /* End of Global Styling */

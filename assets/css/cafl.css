@@ -1,6 +1,11 @@
 /* Global Styling */
+
+body{
+    overflow: hidden;
+}
 div.menu-section {
     display: none;
+    padding-top: 10px;
 }
 
 .cafl-cta-summary{
@@ -15,9 +20,25 @@ div.menu-section {
     color:#555;
    }
 
-   .cafl-cta-summary li{
-    margin-left: 400px;
-   }
+.cafl-cta-summary li{
+    margin-left: 10px;
+}
+
+.cafl-cta-left {
+    margin: 0;
+    text-align: center;
+}
+
+.cafl-cta-left img{
+    width: 60%;
+    height: 400px;
+    margin: 40px auto;
+    object-fit: cover;
+    border-radius: 3px;
+    animation-name: CTA-anim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
 
 /* End of Global Styling */
 
@@ -25,7 +46,7 @@ div.menu-section {
 
 .cafl-header{
     overflow: visible;
-    height: 100px;
+    height: 120px;
   }
 
 
@@ -35,12 +56,26 @@ div.menu-section {
 }
 
 .cafl-header-text {
-    height: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     letter-spacing: 3px;
-    font-size: 16pt;
-    padding: 0 20px;
+    font-size: 18pt;
+    padding: 0 30px;
+}
+
+.cafl-header-strapline {
+    height: 50%;
+    display: block;
+    align-items: center;
+    letter-spacing: 3px;
+    font-size: 14pt;
+    padding: 0 40px 40px 0;
+    text-align: right;
+    width: 100%;
+    font-style: oblique;
+    font-weight: 700;
+    color: #999;
 }
 /* End of Site Header Space */
 
@@ -55,40 +90,59 @@ div.menu-section {
 /*End of Navigation */
 
 /* CTA */
+
+.cafl-vision, .cafl-cta-options{
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.cafl-vision p, .cafl-cta-options p{
+    font-size: 16pt;
+}
+
+.cafl-vision li, .cafl-cta-options li{
+    margin-top: 5%;
+    font-size: 14pt;
+    list-style-type: circle;
+}
+
+.cafl-cta-options li{
+    list-style-type: none;
+    margin-bottom: 10%;
+    font-weight: 700;
+}
+
+.cafl-cta-centre {
+    display: flex;
+    align-items: center;
+}
+
 .cafl-cta-image {
-    float: left;
-    width: 300px;
+    width: 60%;
     height: 400px;
-    margin: 30px;
+    margin: 40px auto;
     object-fit: cover;
     border-radius: 3px;
     animation-name: CTA-anim;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    
  }
 
-.cafl-cta-options{
-    float: left;
-    height: 400px;
-    margin: 30px;
-    display: flex;
-    align-items: center;
-    width: 60%;
-}
-
-.cafl-cta-options li{
-    list-style-type: none;
-    margin: 5%;
-    font-size: 16pt;
-    letter-spacing: 2px;
-}
-
-.cafl-cta-options ul{
-    width: 100%;
-}
-
 .cafl-cta-options a{
-    color: #4561a5;
+    color: #4561cc;
+    padding-top: 10px;
+}
+
+.cafl-vision-footnote {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    font-size: 10pt;
+    letter-spacing: normal;
 }
 
 

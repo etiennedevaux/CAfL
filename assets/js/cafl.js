@@ -1,5 +1,5 @@
 //* Global Variables *//
-   var jsfileversion = "0009";
+   var jsfileversion = "0012";
    
 //* Function aiming to consolidate onload scripts into a single place, keeping the HTML cleaner *//
 function domLoaded() {
@@ -7,6 +7,20 @@ function domLoaded() {
    window.addEventListener("hashchange",function (event) {
       showMenuComponent(location.hash.substring(1,location.hash.length-5));
    })
+
+   var clapse = document.getElementsByClassName("cafl-collapse");
+
+   for (var i=0; i < clapse.length; i++) {
+      var x = clapse[i].parentElement.parentElement.id;
+      clapse[i].addEventListener("click",function () {collapseText(x);});
+   }
+
+   var xpand = document.getElementsByClassName("cafl-expand");
+
+   for (var i=0; i < xpand.length; i++) {
+      var x = xpand[i].parentElement.parentElement.id;
+      xpand[i].addEventListener("click",function () {expandText(x);});
+   }
 
   showMenuComponent("home");
 }
@@ -38,4 +52,22 @@ function helpVideo() {
      //* Open Help Video in popup *//
      var win = window.open('', '_blank', "top=20,left=50,width=660,height=370");
      win.document.body.innerHTML = '<iframe width="640" height="360" src="https://www.youtube.com/embed/au0WZ7WSiQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function collapseText(sectID) {
+   var paras=document.querySelectorAll("#" + sectID + " p")
+   
+   for (var j=0; j < paras.length; j++) {paras[j].style.display="none";}
+   document.querySelectorAll("#" + sectID + " button.cafl-collapse")[0].style.display="none";
+   document.querySelectorAll("#" + sectID + " button.cafl-expand")[0].style.display="inline";
+
+}
+
+function expandText(sectID) {
+   var paras=document.querySelectorAll("#" + sectID + " p")
+   
+   for (var j=0; j < paras.length; j++) {paras[j].style.display="inline";}
+   document.querySelectorAll("#" + sectID + " button.cafl-collapse")[0].style.display="inline";
+   document.querySelectorAll("#" + sectID + " button.cafl-expand")[0].style.display="none";
+
 }

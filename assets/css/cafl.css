@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --cssfileversion: "0009";
+    --cssfileversion: "0013";
 }
 
 
@@ -197,6 +197,20 @@ body{
 
 /* End of CTA */
 
+/* Improve Our Town */
+
+.cafl-improve-dropdown p{
+    display: none;
+}
+
+.cafl-improve-dropdown button.cafl-collapse{
+    display: none;
+}
+
+
+/* End of Improve Our Town */
+
+
 /* Gallery */
 #gallery{
     padding: 0 0 20px;
@@ -252,6 +266,34 @@ line-height: 1.1;
 
 /* End of Gallery */
 
+/* Who We Are Page */
+.cafl-sg-member {
+    margin: 10px 0 2px 10px;
+    font-weight: 700;
+}
+
+.cafl-sg-portfolio {
+    margin: 2px 0 2px 15px;
+    font-size: 95%;
+    font-style: italic;
+}
+
+.cafl-sg-bio {
+    margin: 2px 0 5px 10px;
+    font-size: 90%;
+    line-height: 1.1;
+}
+
+#who-we-are h2{
+    font-size: 14pt;
+    margin: 20px 0 0 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #79c;
+}
+
+/* End of Who We Are Page */
+
 /* Footer */
 footer{
     position: fixed;
@@ -264,7 +306,7 @@ footer{
 
 .cafl-footer-link{
     float: left;
-    width: 25%;
+    width: 20%;
     margin: 0px auto 0px auto;
     font-weight: 600;
     padding-top: 5px;
@@ -287,6 +329,8 @@ footer{
     content: var(--cssfileversion);
   }
 /* End of Footer */
+
+
 
 
 /* Animation for the front page call to action. */

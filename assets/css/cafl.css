@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --cssfileversion: "0013";
+    --cssfileversion: "0019";
 }
 
 
@@ -27,7 +27,6 @@ body{
 
 .cafl-cta-summary{
     color:#171717;
-    margin-top: 30px;
     letter-spacing: 2px;
     padding-top: 20px;
     max-width: 1000px;
@@ -199,8 +198,27 @@ body{
 
 /* Improve Our Town */
 
-.cafl-improve-dropdown p{
+.cafl-improve-dropdown {
+    margin: 0 0 20px 30px;
+}
+
+.cafl-improve-dropdown button{
+    font-size: 12pt;
+    border: none;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.cafl-improve-dropdown p, .cafl-improve-dropdown ul{
+    margin-left: 20px;
+}
+
+.cafl-improve-detail {
     display: none;
+}
+
+.cafl-improve-dropdown h1{
+    font-size: 12pt;
 }
 
 .cafl-improve-dropdown button.cafl-collapse{
@@ -226,7 +244,7 @@ body{
 
 .cafl-gallery-item{
     width: 100%;
-    border: 1px solid lightgray;
+    border: 1px solid #555;
     page-break-inside: avoid;
 }
 
@@ -254,8 +272,6 @@ body{
     display: inline-block;
     padding: 10px;
 }
-
-
 
 .cafl-gallery-caption p{
 color: #222;

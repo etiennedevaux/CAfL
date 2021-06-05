@@ -1,5 +1,5 @@
 //* Global Variables *//
-   var jsfileversion = "0012";
+   var jsfileversion = "0016";
    
 //* Function aiming to consolidate onload scripts into a single place, keeping the HTML cleaner *//
 function domLoaded() {
@@ -11,15 +11,13 @@ function domLoaded() {
    var clapse = document.getElementsByClassName("cafl-collapse");
 
    for (var i=0; i < clapse.length; i++) {
-      var x = clapse[i].parentElement.parentElement.id;
-      clapse[i].addEventListener("click",function () {collapseText(x);});
+      clapse[i].addEventListener("click",function () {collapseText(this.parentElement.parentElement.id);});
    }
 
    var xpand = document.getElementsByClassName("cafl-expand");
 
    for (var i=0; i < xpand.length; i++) {
-      var x = xpand[i].parentElement.parentElement.id;
-      xpand[i].addEventListener("click",function () {expandText(x);});
+      xpand[i].addEventListener("click",function () {expandText(this.parentElement.parentElement.id);});
    }
 
   showMenuComponent("home");
@@ -55,7 +53,7 @@ function helpVideo() {
 }
 
 function collapseText(sectID) {
-   var paras=document.querySelectorAll("#" + sectID + " p")
+   var paras=document.querySelectorAll("#" + sectID + "  .cafl-improve-detail")
    
    for (var j=0; j < paras.length; j++) {paras[j].style.display="none";}
    document.querySelectorAll("#" + sectID + " button.cafl-collapse")[0].style.display="none";
@@ -64,9 +62,9 @@ function collapseText(sectID) {
 }
 
 function expandText(sectID) {
-   var paras=document.querySelectorAll("#" + sectID + " p")
-   
-   for (var j=0; j < paras.length; j++) {paras[j].style.display="inline";}
+   var paras=document.querySelectorAll("#" + sectID + "  .cafl-improve-detail")
+
+   for (var j=0; j < paras.length; j++) {paras[j].style.display="block";}
    document.querySelectorAll("#" + sectID + " button.cafl-collapse")[0].style.display="inline";
    document.querySelectorAll("#" + sectID + " button.cafl-expand")[0].style.display="none";
 

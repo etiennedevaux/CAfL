@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --cssfileversion: "0019";
+    --cssfileversion: "0021";
 }
 
 
@@ -27,9 +27,9 @@ body{
 
 .cafl-cta-summary{
     color:#171717;
-    letter-spacing: 2px;
-    padding-top: 20px;
-    max-width: 1000px;
+    letter-spacing: 1px;
+    max-width: 1200px;
+    line-height: 1.2;
 }
 
 .cafl-cta-summary h1, .cafl-cta-infopage h1{
@@ -37,6 +37,14 @@ body{
     letter-spacing: 2px;
 }
 
+.cafl-narrative {
+    text-align: center;
+    width: 100%;
+    font-size: 110%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 5px;
+}
 
 .cafl-cta-left {
     margin: 0;
@@ -309,6 +317,13 @@ line-height: 1.1;
 }
 
 /* End of Who We Are Page */
+
+/* Contact Page */
+#contact h3{
+    margin: 50px;
+    font-size: 16pt;
+}
+/* End of Contact Page */
 
 /* Footer */
 footer{

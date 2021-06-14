@@ -54,7 +54,7 @@ body{
 .cafl-cta-left img{
     width: 60%;
     height: 500px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 40px auto;
     object-fit: cover;
     border-radius: 3px;
@@ -90,9 +90,15 @@ body{
 
 /* Site Header Space */
 
-.cafl-header{
+.cafl-header-row{
     overflow: visible;
-    height: 120px;
+    height: 160px;
+  }
+
+  .cafl-header-row h1{
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
 
@@ -109,6 +115,7 @@ body{
     font-size: 18pt;
     padding: 0 30px;
     margin: 0;
+    width: 80%;
 }
 
 .cafl-header-strapline {
@@ -167,9 +174,9 @@ body{
 }
 
 .cafl-cta-image {
-    width: 60%;
-    height: 500px;
-    max-width: 400px;
+    width: 80%;
+    max-height: 500px;
+    max-width: 600px;
     margin: 10px auto;
     object-fit: cover;
     border-radius: 3px;

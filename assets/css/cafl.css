@@ -99,6 +99,7 @@ body{
     display: block;
     width: 100%;
     text-align: center;
+    margin-top: 20px;
   }
 
 
@@ -124,7 +125,7 @@ body{
     align-items: center;
     letter-spacing: 3px;
     font-size: 14pt;
-    padding: 0 40px 40px 0;
+    padding: 20px 40px 40px 0;
     text-align: right;
     width: 100%;
     font-style: oblique;
@@ -299,8 +300,8 @@ line-height: 1.1;
 
 /* Who We Are Page */
 .cafl-sg-member {
-    margin: 10px 0 2px 10px;
-    font-weight: 700;
+    margin: 5px 0 2px 10px;
+    font-weight: 600;
 }
 
 .cafl-sg-portfolio {

@@ -3,6 +3,7 @@
    
 //* Function aiming to consolidate onload scripts into a single place, keeping the HTML cleaner *//
 function domLoaded() {
+
    //* Add Event Listeners *//
    window.addEventListener("hashchange",function (event) {
       showMenuComponent(location.hash.substring(1,location.hash.length-5));

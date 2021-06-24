@@ -16,6 +16,7 @@
     <!-- End of Javascript References-->
 
     <script src='assets/js/cafl.js'></script>
+    
 
     <!-- Links to CSS Libraries-->
     <link rel='icon' href='https://etiennedevaux.github.io/CAfL/assets/images/favicon.ico'>
@@ -67,6 +68,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link cafl-nav" href="#gallery-link" id="gallery-button">Gallery</a>
+          </li>
+          <li style="display: none;" class="nav-item">
+            <a class="nav-link cafl-nav" href="#active-link" id="active-button">Active</a>
           </li>
         </ul>
       </div>
@@ -561,6 +565,22 @@
 </div>
 <!-- End of Contact Page-->
 
+<!-- Active Travel Page -->
+<div id="active" class="menu-section">
+
+  
+  <a id="active-link"></a>
+  <div class="row">
+    <div class="cafl-cta-mappage col-12">
+      <h1>Explore Active Travel Routes</h1>
+      <p>The best way to travel</p>
+      <div id="map">
+      </div>
+    </div>
+ </div>
+</div>
+<!-- End of Active Travel Page-->
+
     <!-- Start of Footer-->
     <footer>
       <div class="cafl-footer-top">
@@ -576,7 +596,7 @@
     </footer>
     <!-- End of Footer-->
 
-    
+    <script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAWmo-Ndb3YTzwMWSHAzg8an9dM9WDOlMk&callback=initMap'></script>
   </body>
 
 </html>

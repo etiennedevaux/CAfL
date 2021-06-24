@@ -1,5 +1,9 @@
 //* Global Variables *//
-   var jsfileversion = "0016";
+   var jsfileversion = "0018";
+   var map;
+var src1 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_01.kml';
+var src2 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_02.kml';
+var src3 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_03.kml';
    
 //* Function aiming to consolidate onload scripts into a single place, keeping the HTML cleaner *//
 function domLoaded() {
@@ -22,6 +26,7 @@ function domLoaded() {
    }
 
   showMenuComponent("home");
+  
 }
 
 function showMenuComponent(sect) {
@@ -69,4 +74,44 @@ function expandText(sectID) {
    document.querySelectorAll("#" + sectID + " button.cafl-collapse")[0].style.display="inline";
    document.querySelectorAll("#" + sectID + " button.cafl-expand")[0].style.display="none";
 
+}
+
+function initMap() {
+
+   
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: new google.maps.LatLng(52.289261, -1.5347124),
+    zoom: 15,
+    mapTypeId: 'terrain'
+    });
+
+  var kmlLayer = new google.maps.KmlLayer(src1, {
+    suppressInfoWindows: true,
+    preserveViewport: true,
+    map: map
+  });
+
+var kmlLayer = new google.maps.KmlLayer(src2, {
+    preserveViewport: true,
+    map: map
+  });
+
+var kmlLayer = new google.maps.KmlLayer(src3, {
+    suppressInfoWindows: false,
+    preserveViewport: true,
+    map: map
+  });
+
+  var customStyled = [
+   {
+   featureType: "poi",
+   elementType: "labels",
+   stylers: [
+   { visibility: "off" }
+   ]
+   }
+   ];
+   map.set('styles',customStyled);   
+
+ 
 }

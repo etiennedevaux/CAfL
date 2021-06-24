@@ -3,6 +3,14 @@
     --cssfileversion: "0021";
 }
 
+#map {
+    height: 720px;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    border: thin solid #333;
+    }
+
 
 /* Global Styling */
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>geoxmlreadfromurlHTML</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <style type='text/css'>body{margin:0;padding:0;overflow:hidden;font-family:'Segoe UI',Helvetica,Arial,Sans-Serif}</style>
+    </head>
+    <body>
+        <div id='printoutPanel'></div>
+        
+        <div id='myMap' style='width: 100vw; height: 100vh;'></div>
+        <script type='text/javascript'>
+            function loadMapScenario() {
+                var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                    /* No need to set credentials if already passed in URL */
+                    center: new Microsoft.Maps.Location(52, -0.2),
+                    zoom: 12
+                });
+                Microsoft.Maps.loadModule('Microsoft.Maps.GeoXml', function () {
+                    var callback = function (dataset) {
+                        if (dataset.shapes) {
+                            var l = new Microsoft.Maps.Layer();
+                            l.add(dataset.shapes);
+                            map.layers.insert(l);
+                        }
+                        if (dataset.layers) {
+                            for (var i = 0, len = dataset.layers.length; i < len; i++) {
+                                map.layers.insert(dataset.layers[i]);
+                            }
+                        }
+                        document.getElementById('printoutPanel').innerHTML = '<textarea id="geoxmlTextArea" cols=29 rows=21></textarea>';
+                        document.getElementById('geoxmlTextArea').value = Microsoft.Maps.GeoXml.write(dataset, {
+                            xmlFormat: Microsoft.Maps.GeoXmlFormat.kml,
+                            roundLocations: true
+                        });
+                    };
+                    Microsoft.Maps.GeoXml.readFromUrl('test.kml', { error: function (msg) { alert(msg); } }, callback);
+                });
+                
+            }
+        </script>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AqXZ0hvITdpn5g-2a8bbicLdCTTJgoQHACH441QxLNJDdc_Qlpl6-3BHR0_lGQpJ&callback=loadMapScenario' async defer></script>
+    </body>
+</html>
+
+//* 
+                    var layer = new Microsoft.Maps.GeoXmlLayer('test.kml');
+                    *//
+        
+

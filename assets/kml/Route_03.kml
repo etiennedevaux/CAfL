@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Route_03</name>
+    <name>Route 03</name>
     <Style id="line-F9A825-5069-nodesc-normal">
       <LineStyle>
         <color>ff25a8f9</color>

@@ -1,7 +1,7 @@
 //* Global Variables *//
    var jsfileversion = "0018";
    var map;
-var src1 = 'https://etiennedevaux.github.io/CAfL/assets/kml/route001.kml';
+var src1 = 'https://etiennedevaux.github.io/CAfL/assets/kml/route1.kml';
 var src2 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_02.kml';
 var src3 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_03.kml';
    

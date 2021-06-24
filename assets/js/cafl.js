@@ -1,7 +1,7 @@
 //* Global Variables *//
    var jsfileversion = "0018";
    var map;
-var src1 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_01.kmz';
+var src1 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Cycleroutes.kml';
 var src2 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_02.kml';
 var src3 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_03.kml';
    
@@ -86,17 +86,6 @@ function initMap() {
     });
 
   var kmlLayer = new google.maps.KmlLayer(src1, {
-    suppressInfoWindows: true,
-    preserveViewport: true,
-    map: map
-  });
-
-var kmlLayer = new google.maps.KmlLayer(src2, {
-    preserveViewport: true,
-    map: map
-  });
-
-var kmlLayer = new google.maps.KmlLayer(src3, {
     suppressInfoWindows: false,
     preserveViewport: true,
     map: map

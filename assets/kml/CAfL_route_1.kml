@@ -5,7 +5,7 @@
     <Style id="line-0F9D58-5650-nodesc-normal">
       <LineStyle>
         <color>ff589d0f</color>
-        <width>6.0</width>
+        <width>5.65</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>

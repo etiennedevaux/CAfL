@@ -28,6 +28,7 @@
       //* var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml'; *//
 var src1 = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/Route01.kml';
 var src2 = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/test.kml';
+var src3 = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/Test2.kml';
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -43,6 +44,12 @@ var src2 = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/test.kml'
         });
 
 var kmlLayer = new google.maps.KmlLayer(src2, {
+          suppressInfoWindows: false,
+          preserveViewport: false,
+          map: map
+        });
+
+var kmlLayer = new google.maps.KmlLayer(src3, {
           suppressInfoWindows: false,
           preserveViewport: false,
           map: map

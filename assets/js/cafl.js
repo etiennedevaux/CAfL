@@ -85,11 +85,17 @@ function initMap() {
     mapTypeId: 'terrain'
     });
 
-  var kmlLayer = new google.maps.KmlLayer(src2, {
+  var kmlLayer = new google.maps.KmlLayer(src1, {
     suppressInfoWindows: false,
     preserveViewport: true,
     map: map
   });
+
+  var kmlLayer2 = new google.maps.KmlLayer(src2, {
+   suppressInfoWindows: false,
+   preserveViewport: true,
+   map: map
+ });
 
   
 

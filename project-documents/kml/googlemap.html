@@ -26,7 +26,8 @@
     <script>
       var map;
       //* var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml'; *//
-var src = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/Route01.kml';
+var src1 = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/Route01.kml';
+var src2 = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/test.kml';
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -35,11 +36,18 @@ var src = 'https://etiennedevaux.github.io/CAfL/project-documents/kml/Route01.km
           mapTypeId: 'terrain'
         });
 
-        var kmlLayer = new google.maps.KmlLayer(src, {
+        var kmlLayer = new google.maps.KmlLayer(src1, {
           suppressInfoWindows: true,
           preserveViewport: false,
           map: map
         });
+
+var kmlLayer = new google.maps.KmlLayer(src2, {
+          suppressInfoWindows: false,
+          preserveViewport: false,
+          map: map
+        });
+
         kmlLayer.addListener('click', function(event) {
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');

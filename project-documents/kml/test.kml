@@ -4,7 +4,7 @@
     <name>Untitled layer</name>
     <Style id="line-000000-1200-nodesc-normal">
       <LineStyle>
-        <color>ff000000</color>
+        <color>ff0000ff</color>
         <width>1.2</width>
       </LineStyle>
       <BalloonStyle>
@@ -13,7 +13,7 @@
     </Style>
     <Style id="line-000000-1200-nodesc-highlight">
       <LineStyle>
-        <color>ff000000</color>
+        <color>ff00ff00</color>
         <width>1.8</width>
       </LineStyle>
       <BalloonStyle>

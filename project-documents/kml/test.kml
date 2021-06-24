@@ -13,8 +13,8 @@
     </Style>
     <Style id="line-000000-1200-nodesc-highlight">
       <LineStyle>
-        <color>50AA783C</color>
-        <width>1.8</width>
+        <color>ffd18802</color>
+        <width>10</width>
       </LineStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>]]></text>

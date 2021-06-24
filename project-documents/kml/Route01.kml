@@ -4,7 +4,7 @@
     <name>Directions from Morrisons, Royal Leamington Spa, Leamington Spa CV31 3JE, UK to 272 Myton Rd, Warwick CV34 6PT, UK</name>
     <Style id="icon-1899-DB4436-nodesc-normal">
       <IconStyle>
-        <color>ff3644db</color>
+        <color>000000db</color>
         <scale>1</scale>
         <Icon>
           <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
@@ -20,7 +20,7 @@
     </Style>
     <Style id="icon-1899-DB4436-nodesc-highlight">
       <IconStyle>
-        <color>ff3644db</color>
+        <color>000000db</color>
         <scale>1</scale>
         <Icon>
           <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
@@ -55,7 +55,7 @@
     </Style>
     <Style id="line-1267FF-5000-nodesc-highlight">
       <LineStyle>
-        <color>ffff6712</color>
+        <color>00000012</color>
         <width>7.5</width>
       </LineStyle>
       <BalloonStyle>

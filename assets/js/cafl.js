@@ -1,8 +1,8 @@
 //* Global Variables *//
    var jsfileversion = "0018";
    var map;
-var src1 = 'https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoutes.kml';
-var src2 = 'https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoute01.kml';
+var src1 = 'https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoute01.kml';
+var src2 = 'https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoute02.kml';
 var src3 = 'https://etiennedevaux.github.io/CAfL/assets/kml/Route_03.kml';
    
 //* Function aiming to consolidate onload scripts into a single place, keeping the HTML cleaner *//
@@ -85,17 +85,13 @@ function initMap() {
     mapTypeId: 'terrain'
     });
 
-  var kmlLayer = new google.maps.KmlLayer(src1, {
+  var kmlLayer = new google.maps.KmlLayer(src2, {
     suppressInfoWindows: false,
     preserveViewport: true,
     map: map
   });
 
-  var kmlLayer2 = new google.maps.KmlLayer(src2, {
-   suppressInfoWindows: false,
-   preserveViewport: true,
-   map: map
- });
+  
 
   var customStyled = [
    {

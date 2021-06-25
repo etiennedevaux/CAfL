@@ -32,7 +32,7 @@
     </StyleMap>
     <Placemark>
       <name>Line 5</name>
-      <styleUrl>#line-C2185B-4681-nodesc</styleUrl>
+      <styleUrl>#line-C2185B-4681-nodesc-normal</styleUrl>
       <LineString>
         <tessellate>1</tessellate>
         <coordinates>

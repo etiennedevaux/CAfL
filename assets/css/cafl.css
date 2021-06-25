@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --cssfileversion: "0021";
+    --cssfileversion: "0022";
 }
 
 #map {
@@ -261,6 +261,7 @@ body{
 /* Gallery */
 #gallery{
     padding: 0 0 20px;
+    margin-top: 20px;
 }
 
 #cafl-gallery{

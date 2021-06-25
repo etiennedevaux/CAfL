@@ -241,6 +241,11 @@ body{
     display: none;
 }
 
+.cafl-improve-detail li{
+    font-size: 10pt;
+    margin-top: 3px;
+}
+
 .cafl-improve-dropdown h1{
     font-size: 12pt;
 }

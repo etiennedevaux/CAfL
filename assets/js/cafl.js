@@ -1,7 +1,10 @@
 //* Global Variables *//
-   var jsfileversion = "0020";
+   var jsfileversion = "0021";
    var map;
-   var src = ['https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoutes.kml','https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoutes2.kml','https://etiennedevaux.github.io/CAfL/assets/kml/Route_05.kml'];
+   var src = [ 'https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoutes.kml',
+               'https://etiennedevaux.github.io/CAfL/assets/kml/CycleRoutes2.kml',
+               'https://etiennedevaux.github.io/CAfL/assets/kml/Route_05.kml',
+               'https://etiennedevaux.github.io/CAfL/assets/kml/Route_06.kml','https://etiennedevaux.github.io/CAfL/assets/kml/Route_07.kml','https://etiennedevaux.github.io/CAfL/assets/kml/Route_W_01.kml'];
    
 //* Function aiming to consolidate onload scripts into a single place, keeping the HTML cleaner *//
 function domLoaded() {

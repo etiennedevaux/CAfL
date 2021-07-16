@@ -110,3 +110,14 @@ function initMap() {
 
  
 }
+
+function copyFunction(sourceElement) {
+   alert(sourceElement);
+   var copyTextFrom = document.getElementById(sourceElement);
+   var copyText = document.getElementById("siteClipboard");
+   copyText.value=copyTextFrom.innerText;
+   copyText.select();
+   copyText.setSelectionRange(0, 99999)
+   document.execCommand("copy");
+   alert("Now paste the text to your chosen location by using Ctrl + V.")
+}

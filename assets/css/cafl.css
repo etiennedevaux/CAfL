@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --cssfileversion: "0022";
+    --cssfileversion: "0023";
 }
 
 #map {
@@ -8,7 +8,7 @@
     width: 100%;
     overflow: hidden;
     float: left;
-    border: thin solid #333;
+    border: thin solid #333b;
     }
 
 
@@ -233,6 +233,13 @@ body{
 /* End of CTA */
 
 /* Improve Our Town */
+
+#cafl-goactivemap {
+    margin: 30px;
+    width: 80%;
+    clear: left;
+    border: thin solid #333b;
+}
 
 .cafl-improve-dropdown {
     margin: 0 0 20px 30px;

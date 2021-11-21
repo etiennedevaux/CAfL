@@ -1,7 +1,8 @@
 /* Variables */
 :root{
     --cssfileversion: "0024";
-    --cafw-lightblue(#ddddff;)
+    --cafw-lightblue: #85d1f5;
+    --cafw-dark-blue: #4595f5;
 }
 
 #map {
